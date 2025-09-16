@@ -10,7 +10,10 @@
   <!-- Header -->
   <header class="fixed top-0 w-full bg-white shadow z-50">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="hidden sm:block">
       <h1 class="text-xl font-bold text-emerald-700">Noble Development</h1>
+      <p class="text-xs text-gray-500">Shaping the Future of UAE Utilities</p>
+    </div>
       <nav class="space-x-6 hidden md:flex">
         <a href="#home" class="hover:text-emerald-600">Home</a>
         <a href="#about" class="hover:text-emerald-600">About</a>
@@ -23,12 +26,27 @@
   </header>
 
   <!-- Hero Section -->
-  <section id="home" class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-blue-600 via-emerald-600 to-amber-400 text-white text-center px-6">
+  <section id="home" 
+  class="min-h-screen flex flex-col justify-center items-center 
+         bg-[url('https://www.utilities-me.com/2021/07/GETTY_109832490_ELECTRICITY_PYLON_GRID_WEB_6.jpg')] 
+         bg-cover bg-center text-white text-center px-6 relative">
+
+  <!-- Overlay for better readability -->
+  <div class="absolute inset-0 bg-black/50"></div>
+
+  <div class="relative z-10">
     <h2 class="text-4xl md:text-6xl font-bold mb-6">Shaping the Future of UAE Utilities</h2>
-    <p class="max-w-2xl mb-8 text-lg">Driving innovation, sustainability, and social good through bold ventures. With a landmark US$130 million initiative, Noble Development is pioneering a new era in the UAE’s energy and utilities sector.</p>
+    <p class="max-w-2xl mb-8 text-lg">
+      Driving innovation, sustainability, and social good through bold ventures. 
+      With a landmark US$130 million initiative, Noble Development is pioneering a new era in the UAE’s energy and utilities sector.
+    </p>
     <div class="space-x-4">
-      <a href="#about" class="bg-white text-emerald-700 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100">Explore Our Mission</a>
-      <a href="#contact" class="bg-emerald-600 font-semibold px-6 py-3 rounded-lg hover:bg-emerald-700">Partner With Us</a>
+      <a href="#about" class="bg-white text-emerald-700 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100">
+        Explore Our Mission
+      </a>
+      <a href="#contact" class="bg-yellow-600 font-semibold px-6 py-3 rounded-lg hover:bg-yellow-700">
+        Partner With Us
+      </a>
     </div>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
       <div class="p-4 bg-white/10 rounded-lg">Innovation in Utilities</div>
@@ -36,7 +54,9 @@
       <div class="p-4 bg-white/10 rounded-lg">Venture Capital for Progress</div>
       <div class="p-4 bg-white/10 rounded-lg">Future-Ready Energy</div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- About Section -->
   <section id="about" class="py-20 max-w-7xl mx-auto px-6">
@@ -85,7 +105,7 @@
     <div class="bg-white rounded-lg overflow-hidden shadow group hover:shadow-lg transition-shadow duration-300">
       <img src="innovation Lab.jpeg" alt="Power" class="w-full h-64 object-cover">
       <div class="p-6 text-center relative">
-        <h3 class="text-lg font-bold text-blue-600">Innovation Labs</h3>
+        <h3 class="text-lg font-bold ">Innovation Labs</h3>
         <p class="text-sm text-gray-600 mt-2 max-h-0 overflow-hidden opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 ease-in-out">
           Building R&D hubs to reimagine how energy and resources are managed
         </p>
@@ -107,7 +127,7 @@
     <div class="bg-white rounded-lg overflow-hidden shadow group hover:shadow-lg transition-shadow duration-300">
       <img src="Energy Solutions.jpeg" alt="Infrastructure" class="w-full h-64 object-cover">
       <div class="p-6 text-center relative">
-        <h3 class="text-lg font-bold text-emerald-600">Energy Solutions</h3>
+        <h3 class="text-lg font-bold">Energy Solutions</h3>
         <p class="text-sm text-gray-600 mt-2 max-h-0 overflow-hidden opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 ease-in-out">
           Providing modern, efficient, and socially responsible utility models.
         </p>
@@ -136,7 +156,7 @@
     <div class="bg-white rounded-lg overflow-hidden shadow group hover:shadow-lg transition-shadow duration-300">
       <img src="innovation.jpeg" alt="Power" class="w-full h-64 object-cover">
       <div class="p-6 text-center relative">
-        <h3 class="text-lg font-bold text-blue-600">Innovation</h3>
+        <h3 class="text-lg font-bold ">Innovation</h3>
         <p class="text-sm text-gray-600 mt-2 max-h-0 overflow-hidden opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 ease-in-out">
           Embracing bold ideas and disruptive technologies.
         </p>
@@ -158,7 +178,7 @@
     <div class="bg-white rounded-lg overflow-hidden shadow group hover:shadow-lg transition-shadow duration-300">
       <img src="social impact.jpeg" alt="Infrastructure" class="w-full h-64 object-cover">
       <div class="p-6 text-center relative">
-        <h3 class="text-lg font-bold text-emerald-600">Social Impact</h3>
+        <h3 class="text-lg font-bold ">Social Impact</h3>
         <p class="text-sm text-gray-600 mt-2 max-h-0 overflow-hidden opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 ease-in-out">
           Prioritizing communities alongside profits.
         </p>
