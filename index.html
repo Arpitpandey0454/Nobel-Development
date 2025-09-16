@@ -6,9 +6,9 @@
   <title>Noble Development – Shaping the Future of UAE Utilities</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 text-gray-900">
+<body class="bg-gradient-to-br from-yellow-200 via-green-200 to-blue-300 text-gray-900">
   <!-- Header -->
-  <header class="fixed top-0 w-full bg-white shadow z-50">
+  <header class="fixed top-0 w-full bg-white/90 shadow z-50 backdrop-blur">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
       <div class="hidden sm:block">
       <h1 class="text-xl font-bold text-emerald-700">Noble Development</h1>
@@ -25,41 +25,40 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section id="home" 
-  class="min-h-screen flex flex-col justify-center items-center 
-         bg-[url('https://www.utilities-me.com/2021/07/GETTY_109832490_ELECTRICITY_PYLON_GRID_WEB_6.jpg')] 
-         bg-cover bg-center text-white text-center px-6 relative">
+ <!-- Hero Section -->
+<section id="home" 
+class="min-h-screen flex flex-col justify-center items-center 
+       bg-[url('hero.png')] 
+       bg-cover bg-center text-white text-center px-6 relative">
 
-  <!-- Overlay for better readability -->
-  <div class="absolute inset-0 bg-black/50"></div>
+<!-- Overlay for better readability -->
+<div class="absolute inset-0 bg-black/50"></div>
 
-  <div class="relative z-10">
-    <h2 class="text-4xl md:text-6xl font-bold mb-6">Shaping the Future of UAE Utilities</h2>
-    <p class="max-w-2xl mb-8 text-lg">
-      Driving innovation, sustainability, and social good through bold ventures. 
-      With a landmark US$130 million initiative, Noble Development is pioneering a new era in the UAE’s energy and utilities sector.
-    </p>
-    <div class="space-x-4">
-      <a href="#about" class="bg-white text-emerald-700 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100">
-        Explore Our Mission
-      </a>
-      <a href="#contact" class="bg-yellow-600 font-semibold px-6 py-3 rounded-lg hover:bg-yellow-700">
-        Partner With Us
-      </a>
-    </div>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
-      <div class="p-4 bg-white/10 rounded-lg">Innovation in Utilities</div>
-      <div class="p-4 bg-white/10 rounded-lg">Sustainability at Core</div>
-      <div class="p-4 bg-white/10 rounded-lg">Venture Capital for Progress</div>
-      <div class="p-4 bg-white/10 rounded-lg">Future-Ready Energy</div>
-    </div>
+<div class="relative z-10">
+  <h2 class="text-4xl md:text-6xl font-bold mb-6">Shaping the Future of UAE Utilities</h2>
+  <p class="max-w-2xl mb-8 text-lg">
+    Driving innovation, sustainability, and social good through bold ventures. 
+    With a landmark US$130 million initiative, Noble Development is pioneering a new era in the UAE’s energy and utilities sector.
+  </p>
+  <div class="space-x-4">
+    <a href="#about" class="bg-white text-emerald-700 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100">
+      Explore Our Mission
+    </a>
+    <a href="#contact" class="bg-yellow-600 font-semibold px-6 py-3 rounded-lg hover:bg-yellow-700">
+      Partner With Us
+    </a>
   </div>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+    <div class="p-4 bg-white/10 rounded-lg">Innovation in Utilities</div>
+    <div class="p-4 bg-white/10 rounded-lg">Sustainability at Core</div>
+    <div class="p-4 bg-white/10 rounded-lg">Venture Capital for Progress</div>
+    <div class="p-4 bg-white/10 rounded-lg">Future-Ready Energy</div>
+  </div>
+</div>
 </section>
 
-
   <!-- About Section -->
-  <section id="about" class="py-20 max-w-7xl mx-auto px-6">
+  <section id="about" class="py-20 max-w-7xl mx-auto px-6 bg-white/70 backdrop-blur rounded-xl shadow">
     <h2 class="text-4xl font-bold text-center mb-12">About Us</h2>
     <p class="text-lg text-gray-700 mb-6">
       At Noble Development, we believe the future of business is about purpose. Our story is one of bold investments, vision, and an unwavering belief that UAE’s utilities can be a global example of innovation, sustainability, and impact.
@@ -88,6 +87,7 @@
 
   <!-- Services Section -->
 
+  <section id="services" class="py-20 max-w-7xl mx-auto px-6 bg-white/70 backdrop-blur rounded-xl shadow">
   <h2 class="text-4xl font-bold text-center mb-12">Our Services</h2>
   <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
     <!-- Card 1 -->
@@ -100,6 +100,7 @@
         </p>
       </div>
     </div>
+  
   
     <!-- Card 2 -->
     <div class="bg-white rounded-lg overflow-hidden shadow group hover:shadow-lg transition-shadow duration-300">
@@ -134,13 +135,17 @@
       </div>
     </div>
   </div>
+
+</div>
+</section>
   
   
 
 
   <!-- Core Values -->
-  <h2 class="text-4xl mt-12 font-bold text-center mb-12">Our Core Values</h2>
-  <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+  <section id="values" class="py-20 max-w-7xl mx-auto px-6 bg-white/70 backdrop-blur rounded-xl shadow">
+    <h2 class="text-4xl mt-12 font-bold text-center mb-12">Our Core Values</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
     <!-- Card 1 -->
     <div class="bg-white rounded-lg overflow-hidden shadow group hover:shadow-lg transition-shadow duration-300">
       <img src="sustainable.jpeg" alt="Water" class="w-full h-64 object-cover">
@@ -196,13 +201,15 @@
     </div>
   </div>
 
+  </section>
+  
+
   <!-- Blog Section -->
  
-<section class="bg-gray-50 py-20">
-  <div class="max-w-7xl mx-auto px-6 text-center">
-    <h2 class="text-4xl font-bold text-gray-900 mb-12">Insights & Articles</h2>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+  <section id="blog" class="py-20 max-w-7xl mx-auto px-6 bg-white/70 backdrop-blur rounded-xl shadow">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold text-gray-900 mb-12">Insights & Articles</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
       <!-- Card 1 -->
       <div class="bg-white rounded-xl shadow p-6 text-left hover:shadow-md transition-shadow duration-300">
         <h3 class="text-lg font-semibold text-gray-900 mb-3">
@@ -245,10 +252,25 @@
       <div>
         <h2 class="text-4xl font-bold mb-6">Contact Us</h2>
         <p class="mb-6">Have an idea, partnership proposal, or simply want to know more? We’d love to hear from you.</p>
-        <h5 class="font-bold">CALL US: +971 (XXX) XXX XXXX</h5>
-        <h5 class="font-bold">Email Us: info@nobledev.ae</h5>
-        <h5 class="font-bold">Visit Us: Noble Development – UAE</h5>
-        <ul class="space-y-4" id="contact-info"></ul>
+        <div class="space-y-4">
+          <!-- Phone -->
+          <p class="font-bold">
+            📞 <span class="text-yellow-400">Call Us:</span> 
+            <a href="tel:+971XXXXXXXXX" class="hover:underline">+971 (XXX) XXX XXXX</a>
+          </p>
+          
+          <!-- Email -->
+          <p class="font-bold">
+            📧 <span class="text-yellow-400">Email Us:</span> 
+            <a href="mailto:info@nobledev.ae" class="hover:underline">info@nobledev.ae</a>
+          </p>
+          
+          <!-- Location -->
+          <p class="font-bold">
+            📍 <span class="text-yellow-400">Visit Us:</span> 
+            <a href="https://www.google.com/maps/place/UAE" target="_blank" class="hover:underline">Noble Development – UAE</a>
+          </p>
+        </div>
       </div>
       <form class="bg-white rounded-lg p-8 text-gray-900 space-y-4">
         <input type="text" placeholder="Name" class="w-full border px-4 py-2 rounded" required>
