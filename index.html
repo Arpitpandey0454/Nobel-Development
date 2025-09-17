@@ -26,69 +26,242 @@
   </header>
 
  <!-- Hero Section -->
-<section id="home" 
-class="min-h-screen flex flex-col justify-center items-center 
-       bg-[url('hero.png')] 
-       bg-cover bg-center text-white text-center px-6 relative">
+ <section id="home" 
+ class="relative min-h-screen flex flex-col justify-between items-start text-white text-left px-6 md:px-16 py-12 overflow-hidden">
+ 
+   <!-- Background Video -->
+   <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
+     <source src="hero-video.mp4" type="video/mp4">
+   </video>
+ 
+   <!-- Overlay for better readability -->
+   <div class="absolute inset-0 bg-black/20"></div>
+ 
+   <!-- Content -->
+   <div class="relative z-10 max-w-2xl mt-12 me-8">
+     <h2 class="text-4xl md:text-6xl font-bold mb-6">Shaping the Future of UAE Utilities</h2>
+     <p class="text-lg mb-8 max-w-6xl mx-auto">
+      Driving innovation, sustainability, and social good through bold ventures. 
+      With a landmark US$130 million initiative, Noble Development is pioneering a new era in the UAE’s energy and utilities sector.
+    </p>
+    
+   </div>
+ 
+   <!-- Buttons at bottom -->
+   <div class="relative z-10 mb-8 flex space-x-4">
+     <a href="#mission" class="bg-white text-emerald-700 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100">
+       Explore Our Mission
+     </a>
+     <a href="#contact" class="bg-yellow-600 font-semibold px-6 py-3 rounded-lg hover:bg-yellow-700">
+       Partner With Us
+     </a>
+   </div>
+ </section>
 
-<!-- Overlay for better readability -->
-<div class="absolute inset-0 bg-black/50"></div>
+ <!-- Key Highlights Section -->
+<section id="highlights" class="relative py-20 bg-gradient-to-br from-emerald-50 via-white to-emerald-100">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    
+    <!-- Heading -->
+    <h2 class="text-4xl font-bold mb-4">
+      Our <span class="text-emerald-600">Key Highlights</span>
+    </h2>
+    <p class="text-gray-600 max-w-2xl mx-auto mb-12">
+      Driving progress with innovation, sustainability, and clean energy solutions for a better tomorrow.
+    </p>
 
-<div class="relative z-10">
-  <h2 class="text-4xl md:text-6xl font-bold mb-6">Shaping the Future of UAE Utilities</h2>
-  <p class="max-w-2xl mb-8 text-lg">
-    Driving innovation, sustainability, and social good through bold ventures. 
-    With a landmark US$130 million initiative, Noble Development is pioneering a new era in the UAE’s energy and utilities sector.
-  </p>
-  <div class="space-x-4">
-    <a href="#about" class="bg-white text-emerald-700 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100">
-      Explore Our Mission
-    </a>
-    <a href="#contact" class="bg-yellow-600 font-semibold px-6 py-3 rounded-lg hover:bg-yellow-700">
-      Partner With Us
-    </a>
+    <!-- Highlight Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      
+      <!-- Card 1 -->
+      <div class="group bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+        <div class="text-emerald-600 text-5xl mb-4 transition-transform duration-500 group-hover:scale-110">
+          💡
+        </div>
+        <h3 class="text-xl font-bold mb-2">Innovation in Utilities</h3>
+        <p class="text-gray-600">Smarter, faster, and future-ready solutions for tomorrow.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="group bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+        <div class="text-green-600 text-5xl mb-4 transition-transform duration-500 group-hover:scale-110">
+          🌿
+        </div>
+        <h3 class="text-xl font-bold mb-2">Sustainability at Core</h3>
+        <p class="text-gray-600">Growth with responsibility towards the planet.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="group bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+        <div class="text-orange-500 text-5xl mb-4 transition-transform duration-500 group-hover:scale-110">
+          🤝
+        </div>
+        <h3 class="text-xl font-bold mb-2">Venture Capital for Progress</h3>
+        <p class="text-gray-600">Funding startups to drive innovation in utilities.</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="group bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+        <div class="text-yellow-500 text-5xl mb-4 transition-transform duration-500 group-hover:scale-110">
+          ⚡
+        </div>
+        <h3 class="text-xl font-bold mb-2">Future-Ready Energy</h3>
+        <p class="text-gray-600">Clean and reliable energy for the UAE and beyond.</p>
+      </div>
+
+    </div>
   </div>
-  <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
-    <div class="p-4 bg-white/10 rounded-lg">Innovation in Utilities</div>
-    <div class="p-4 bg-white/10 rounded-lg">Sustainability at Core</div>
-    <div class="p-4 bg-white/10 rounded-lg">Venture Capital for Progress</div>
-    <div class="p-4 bg-white/10 rounded-lg">Future-Ready Energy</div>
-  </div>
-</div>
 </section>
 
-  <!-- About Section -->
-  <section id="about" class="py-20 max-w-7xl mx-auto px-6 bg-white/70 backdrop-blur rounded-xl shadow">
-    <h2 class="text-4xl font-bold text-center mb-12">About Us</h2>
-    <p class="text-lg text-gray-700 mb-6">
-      At Noble Development, we believe the future of business is about purpose. Our story is one of bold investments, vision, and an unwavering belief that UAE’s utilities can be a global example of innovation, sustainability, and impact.
-    </p>
-    <p class="text-lg text-gray-700 mb-6">
-      Founded with the conviction that utilities require fresh thinking, Noble Development launched a landmark US$130 million initiative—symbolizing our intent to balance profit with purpose and transform lives.
-    </p>
-    <blockquote class="border-l-4 border-emerald-500 pl-4 italic text-gray-600 mb-8">
-      “The new age for the industry is just around the corner – the next 2-3 years will be path-breaking.” – Richard Menezes
+
+
+ <!-- About Section -->
+ <section id="about" class="py-20 max-w-7xl mx-auto px-6 bg-gradient-to-r from-emerald-50 via-white to-emerald-100 shadow">
+  <h2 class="text-4xl font-bold text-center text-black mb-12">About
+    <span class="text-blue-400"> Us</span></h2>
+  <p class="text-lg text-gray-700 mb-6">
+    At Noble Development, we believe the future of business is about purpose. Our story is one of bold investments, vision, and an unwavering belief that UAE’s utilities can be a global example of innovation, sustainability, and impact.
+  </p>
+  <p class="text-lg text-gray-700 mb-6">
+    Founded with the conviction that utilities require fresh thinking, Noble Development launched a landmark US$130 million initiative—symbolizing our intent to balance profit with purpose and transform lives.
+  </p>
+ 
+  
+  </div>
+</section>
+
+
+<!-- Richard Menezes Section -->
+<section id="founder" class="py-16 bg-gradient-to-r from-emerald-50 via-white to-emerald-100">
+  <div class="max-w-3xl mx-auto text-center">
+    
+    <!-- Circular Image -->
+    <div class="relative inline-block">
+      <img src="RM.jpeg" alt="Richard Menezes" 
+           class="w-40 h-40 rounded-full object-cover shadow-lg transform transition duration-500 hover:scale-110 hover:brightness-90 hover:grayscale-0 hover:saturate-150 border-4 border-blue-200">
+    </div>
+    
+    <!-- Quote -->
+    <blockquote class="mt-6 text-lg italic text-gray-600">
+      “The new age for the industry is just around the corner – 
+      the next 2-3 years will be path-breaking.”
     </blockquote>
-    <div class="grid md:grid-cols-2 gap-12">
-      <div>
-        <h3 class="text-2xl font-semibold mb-4">Our Vision</h3>
-        <p>To redefine the UAE’s utilities sector with bold ideas, impactful investments, and sustainable practices.</p>
+
+    <!-- Name -->
+    <p class="mt-4 font-semibold text-gray-800">– Richard Menezes</p>
+  </div>
+</section>
+
+
+
+<!-- Our Mission Section -->
+<section id="mission" class="relative py-20 bg-gradient-to-r from-emerald-50 via-white to-emerald-100 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
+    
+    <!-- Left Image -->
+    <div class="relative">
+      <img src="mission.png" alt="Our Mission" class="rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-700">
+      <!-- Decorative circle -->
+      <div class="absolute -top-8 -left-8 w-40 h-40 bg-emerald-200 rounded-full blur-3xl opacity-50"></div>
+    </div>
+
+    <!-- Right Content -->
+    <div>
+      <h2 class="text-4xl md:text-5xl font-extrabold mb-6">
+        Our <span class="text-emerald-600">Mission</span>
+      </h2>
+      <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+        At Noble Development, our mission is to <span class="font-semibold text-emerald-600">redefine the UAE’s energy & utilities sector</span> 
+        by driving innovation, promoting sustainability, and creating ventures that deliver long-term impact.
+      </p>
+
+      <!-- Mission Highlights -->
+      <div class="space-y-6">
+        <div class="flex items-start gap-4 group">
+          <div class="text-emerald-600 text-3xl group-hover:scale-110 transition-transform duration-500">🚀</div>
+          <p class="text-gray-700">Empowering UAE with <span class="font-semibold">future-ready solutions</span> and bold innovations.</p>
+        </div>
+        <div class="flex items-start gap-4 group">
+          <div class="text-green-600 text-3xl group-hover:scale-110 transition-transform duration-500">🌍</div>
+          <p class="text-gray-700">Building ventures that <span class="font-semibold">balance social good and business growth</span>.</p>
+        </div>
+        <div class="flex items-start gap-4 group">
+          <div class="text-yellow-500 text-3xl group-hover:scale-110 transition-transform duration-500">⚡</div>
+          <p class="text-gray-700">Driving <span class="font-semibold">clean energy</span> and sustainability as the core focus.</p>
+        </div>
       </div>
-      <div>
-        <h3 class="text-2xl font-semibold mb-4">Our Mission</h3>
-        <ul class="list-disc pl-5 space-y-2">
-          <li>Build ventures that prioritize social good alongside financial growth</li>
-          <li>Drive clean energy and innovative utilities</li>
-          <li>Empower UAE with future-ready solutions</li>
-        </ul>
+
+      <!-- CTA Button -->
+      <div class="mt-8">
+        <a href="#contact" class="inline-block bg-emerald-600 text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-emerald-700 transition">
+          Join Our Journey
+        </a>
       </div>
     </div>
-  </section>
+  </div>
+
+  <!-- Decorative gradient blur background -->
+  <div class="absolute bottom-0 right-0 w-72 h-72 bg-yellow-200 rounded-full blur-3xl opacity-40"></div>
+</section>
+
+
+<!-- Our Vision Section -->
+<section id="vision" class="relative py-20 bg-gradient-to-r from-blue-50 via-white to-blue-100 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
+
+    <!-- Left Content -->
+    <div>
+      <h2 class="text-4xl md:text-5xl font-extrabold mb-6">
+        Our <span class="text-blue-600">Vision</span>
+      </h2>
+      <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+        Our vision is to <span class="font-semibold text-blue-600">transform the UAE’s utilities sector</span> 
+        into a global example of innovation, sustainability, and impactful growth.
+      </p>
+
+      <!-- Vision Highlights -->
+      <div class="space-y-6">
+        <div class="flex items-start gap-4 group">
+          <div class="text-blue-600 text-3xl group-hover:scale-110 transition-transform duration-500">💡</div>
+          <p class="text-gray-700">Redefining utilities with <span class="font-semibold">bold ideas</span> and innovative investments.</p>
+        </div>
+        <div class="flex items-start gap-4 group">
+          <div class="text-indigo-600 text-3xl group-hover:scale-110 transition-transform duration-500">🏙️</div>
+          <p class="text-gray-700">Creating a <span class="font-semibold">sustainable ecosystem</span> for future generations.</p>
+        </div>
+        <div class="flex items-start gap-4 group">
+          <div class="text-cyan-500 text-3xl group-hover:scale-110 transition-transform duration-500">🌱</div>
+          <p class="text-gray-700">Balancing <span class="font-semibold">profit with purpose</span> to impact lives positively.</p>
+        </div>
+      </div>
+
+      <!-- CTA Button -->
+      <div class="mt-8">
+        <a href="#contact" class="inline-block bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition">
+          Discover Our Vision
+        </a>
+      </div>
+    </div>
+
+    <!-- Right Image -->
+    <div class="relative">
+      <img src="v.png" alt="Our Vision" class="rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-700">
+      <!-- Decorative circle -->
+      <div class="absolute -bottom-8 -right-8 w-40 h-40 bg-blue-200 rounded-full blur-3xl opacity-50"></div>
+    </div>
+  </div>
+
+  <!-- Decorative gradient blur background -->
+  <div class="absolute top-0 left-0 w-72 h-72 bg-indigo-200 rounded-full blur-3xl opacity-40"></div>
+</section>
+
+
 
   <!-- Services Section -->
 
   <section id="services" class="py-20 max-w-7xl mx-auto px-6 bg-white/70 backdrop-blur rounded-xl shadow">
-  <h2 class="text-4xl font-bold text-center mb-12">Our Services</h2>
+  <h2 class="text-4xl font-bold text-center mb-12">Our
+    <span class="text-yellow-600"> Services</span></h2>
   <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
     <!-- Card 1 -->
     <div class="bg-white rounded-lg overflow-hidden shadow group hover:shadow-lg transition-shadow duration-300">
@@ -144,7 +317,8 @@ class="min-h-screen flex flex-col justify-center items-center
 
   <!-- Core Values -->
   <section id="values" class="py-20 max-w-7xl mx-auto px-6 bg-white/70 backdrop-blur rounded-xl shadow">
-    <h2 class="text-4xl mt-12 font-bold text-center mb-12">Our Core Values</h2>
+    <h2 class="text-4xl mt-12 font-bold text-center mb-12">Our 
+      <span class="text-yellow-600">Core Values</span></h2>
     <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
     <!-- Card 1 -->
     <div class="bg-white rounded-lg overflow-hidden shadow group hover:shadow-lg transition-shadow duration-300">
@@ -208,7 +382,7 @@ class="min-h-screen flex flex-col justify-center items-center
  
   <section id="blog" class="py-20 max-w-7xl mx-auto px-6 bg-white/70 backdrop-blur rounded-xl shadow">
     <div class="max-w-7xl mx-auto px-6 text-center">
-      <h2 class="text-4xl font-bold text-gray-900 mb-12">Insights & Articles</h2>
+      <h2 class="text-4xl font-bold text-emerald-600 mb-12">Insights <span class="text-black">&</span> <span class="text-blue-600">Articles</span></h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
       <!-- Card 1 -->
       <div class="bg-white rounded-xl shadow p-6 text-left hover:shadow-md transition-shadow duration-300">
